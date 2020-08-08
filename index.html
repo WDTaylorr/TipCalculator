@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+
+  <div id="container" class="container">
+
+    <h1>Tip Calculator</h1>
+
+    <!-- Top Section -->
+    <section class="section" id="top">
+      <!-- Bill -->
+      <div id="billWrapper">
+        <label for="bill">Bill</label>
+        <input type="number" id="billInput" placeholder="Your Bill">
+      </div>
+      <!-- Tip Input -->
+      <div class="tipWrapper">
+        <div class="tipContent">
+          <label for="tip">Select tip</label>
+          <span id="tipPercent">0%</span>
+        </div>
+        <input class="range" value="0" id="tipBar" type="range" min="0" max="100">
+      </div>
+      <!-- Tip Value -->
+      <div class="tipPrice">
+        <h1>Tip</h1>
+        <span id="tipValue">$0.00</span>
+      </div>
+      <hr>
+      <!-- Total -->
+      <div class="total">
+        <h1>Total</h1>
+        <span id="total">$0</span>
+      </div>
+    </section>
+
+    <!-- Split Button -->
+    <button id="splitBtn">Add A Split</button>
+
+    <!-- Bottom Section -->
+    <section id="splitSection" class="section" >
+      <!-- Split -->
+      <div class="splitWrapper">
+        <div class="splitContent">
+          <label for="split">Split</label>
+          <span id="split">1 person(s)</span>
+        </div>
+        <input class="range" value="0" id="splitBar" type="range" min="1" max="10">
+      </div>
+
+      <!-- Total for each person -->
+      <div class="totalEach">
+        <h1>Total each</h1>
+        <span id="totalEach">$0.00</span>
+      </div>
+    </section>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
